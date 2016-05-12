@@ -27,9 +27,9 @@ return angular.module('angular-clipboard', [])
                 var selection = $document[0].getSelection();
                 selection.removeAllRanges();
 
-								var x = window.pageXOffset, y = window.pageYOffset;
+                var x = window.pageXOffset, y = window.pageYOffset;
                 node.select();
-								window.scrollTo(x, y);
+                window.scrollTo(x, y);
 
                 if(!$document[0].execCommand('copy')) {
                     throw('failure copy');
